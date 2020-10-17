@@ -38,6 +38,7 @@ RUN apt-get update && \
 		ros-kinetic-tf \
 		ros-kinetic-gps-common \
 		python-pip && \
+	pip install --upgrade pip && \
 	pip install pyserial
 ##### driver #####
 RUN cd /home/ros_catkin_ws/src &&\
