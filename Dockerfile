@@ -36,7 +36,9 @@ RUN mkdir -p /home/ros_catkin_ws/src && \
 RUN apt-get update && \
 	apt-get install -y \
 		ros-kinetic-tf \
-		ros-kinetic-gps-common
+		ros-kinetic-gps-common && \
+		python-pip && \
+	pip install pyserial
 ##### driver #####
 RUN cd /home/ros_catkin_ws/src &&\
 	git clone https://github.com/xsens/xsens_mti_ros_node && \
