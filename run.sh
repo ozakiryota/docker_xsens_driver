@@ -4,5 +4,5 @@ image_name="xsens_driver"
 
 docker run -it --rm \
 	--net=host \
-	-v /dev:/dev \
+	--privileged \
 	$image_name:latest
